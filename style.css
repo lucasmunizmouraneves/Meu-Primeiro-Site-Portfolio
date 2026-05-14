@@ -1,0 +1,88 @@
+/* Variáveis para facilitar a manutenção das cores */
+:root {
+    --bg-color: #d1f0f8;
+    --primary-color: #25d366;
+    --text-color: #333;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header, section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os Cards de Serviços */
+.pacotes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+}
+
+address {
+    margin-top: 30px;
+    font-style: normal;
+    font-size: 0.9rem;
+}
